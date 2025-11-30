@@ -65,4 +65,3 @@ A simple, TV-friendly web application designed for FireOS devices and Amazon Fir
 
 - [HoloX Official Website](https://holox-co.github.io/)  
 - [HoloX Project Docs](https://holox-co.github.io/project-docs/)  
-- [GitHub Repository](https://github.com/Holox-co/FireOS-WebApp/)  
