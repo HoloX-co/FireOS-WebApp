@@ -12,7 +12,7 @@ A simple, TV-friendly web application designed for FireOS devices and Amazon Fir
 - **Accessible UI**: Large buttons, clear focus indicators, and TV-optimized layout.  
 - **GitHub Integration**: Direct link to star the project.  
 - **PWA Ready**: Includes a manifest file for installable standalone experience.  
-`
+
 ---
 
 ## File Structure
