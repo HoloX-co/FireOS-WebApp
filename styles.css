@@ -1,0 +1,45 @@
+/* TV-focused overrides: larger UI, visible focus, D-pad friendly */
+:root {
+  --tv-font-size: 22px;
+  --tv-padding: 28px;
+  --tv-gap: 18px;
+  --focus-ring: 4px;
+}
+
+@media (min-width: 800px), (pointer: coarse) {
+  .root {
+    padding: clamp(28px, 4vw, 48px);
+    max-width: 1200px;
+  }
+  h1 { font-size: 34px; }
+  h2 { font-size: 26px; }
+  #main-screen, #about-screen { gap: var(--tv-gap); }
+  button {
+    font-size: var(--tv-font-size);
+    padding: 18px 24px;
+    min-height: 64px;
+    border-radius: 14px;
+  }
+}
+
+/* focus visible for D-pad navigation */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 var(--focus-ring) rgba(96,165,250,0.22), 0 10px 30px rgba(2,6,23,0.6);
+  transform: translateY(-2px);
+}
+
+/* ensure links in about are large and accessible */
+#about-screen a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.02);
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+/* make hidden use visibility to avoid layout jumps on TV */
+.hidden { display:block !important; visibility:hidden !important; height:0 !important; overflow:hidden; pointer-events:none; }
+.hidden.visible { visibility:visible !important; height:auto !important; pointer-events:auto !important; opacity:1; }

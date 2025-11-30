@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FireOS WebApp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="root" role="main" aria-labelledby="app-title">
+    <h1 id="app-title">Welcome to HoloX FireOs WebApp</h1>
+
+    <!-- main-screen should be visible initially -->
+    <div id="main-screen" aria-hidden="false">
+      <button id="btnSupport" type="button" aria-label="Open GitHub repository">Give Star on Github</button>
+      <button id="btnAbout" type="button" aria-label="About us">About us</button>
+    </div>
+
+    <!-- about-screen MUST be hidden initially -->
+    <div id="about-screen" class="hidden" aria-hidden="true">
+      <h2>About HoloX FireOs WebApp</h2>
+      <p>This is a sample web application for FireOS devices.</p>
+      <p>You Can See Our Website on <a href="https://holox-co.github.io/" rel="noopener noreferrer" target="_blank">HoloX</a></p>
+      <p>You Can Also See Our projects on <a href="https://holox-co.github.io/project-docs/" rel="noopener noreferrer" target="_blank">projects</a></p>
+      <button id="btnBack" type="button" aria-label="Back to main">Back to Main</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
